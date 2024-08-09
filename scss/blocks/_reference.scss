@@ -1,0 +1,26 @@
+.reference {
+  padding-top: 182px;
+
+  &__container {}
+
+  &__header {
+    text-align: center;
+    margin-bottom: clamp(60px, 3.295rem + 2.27vw, 92px);
+  }
+
+  &__title {
+    margin-bottom: 27px;
+  }
+
+  &__description {}
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+
+    @include mobile() {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

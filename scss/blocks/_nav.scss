@@ -1,0 +1,19 @@
+.nav {
+  display: grid;
+  grid-template-columns: 2fr 8fr 2fr;
+  align-items: center;
+  gap: 20px;
+
+  &__logo {
+    z-index: 4;
+
+    img {
+      @include tablet() {
+        height: clamp(30px, 1.399rem + 2.38vw, 46px);
+      }
+    }
+  }
+  &__burger {
+    justify-self: center;
+  }
+}

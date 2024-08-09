@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daunku</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <nav class="header__nav nav">
+            <a href="#" class="nav__logo">
+              <img src="img/icons/logo.svg" alt="logo">
+            </a>
+            <ul class="nav-list">
+              <li class="nav-list__item">
+                <a href="#" class="nav-list__link">Home</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="#" class="nav-list__link">Shop</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="#" class="nav-list__link">About Us</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="#" class="nav-list__link">Contact</a>
+              </li>
+            </ul>
+            <a href="#" class="cart">
+              <img src="img/icons/cart.svg" alt="cart" class="cart__img">
+              <div class="cart__count">1</div>
+            </a>
+            <button class="nav__burger burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="popup"></div>
+          </nav>
+          <div class="header__content">
+            <h1 class="header__title">Bring Serenity to Your Place With Interior Plants</h1>
+            <div class="header__description">
+              <p>find your dream plant for you home decoration with us, and we will make it happen.</p>
+            </div>
+            <div class="header__search">
+              <form action="" class="search-form">
+                <input placeholder="Search plant" type="text" class="search-form__input">
+                <button class="search-form__btn">
+                  <img src="img/icons/search.svg" alt="Search">
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="header__dot header__dot--sansevieria">
+            <button class="info-dot">
+              <div class="info-dot__circle"></div>
+              <div class="info-dot__radius"></div>
+            </button>
+            <div class="info-hint none">
+              <h2 class="info-hint__price">$65.00</h2>
+              <h3 class="info-hint__title">Dracena Fragnas</h3>
+            </div>
+          </div>
+          <div class="header__dot header__dot--daffodils">
+            <button class="info-dot">
+              <div class="info-dot__circle"></div>
+              <div class="info-dot__radius"></div>
+            </button>
+            <div class="info-hint none">
+              <h2 class="info-hint__price">$75.00</h2>
+              <h3 class="info-hint__title">Daffodils</h3>
+            </div>
+          </div>
+          <div class="header__dot header__dot--dracaena">
+            <button class="info-dot">
+              <div class="info-dot__circle"></div>
+              <div class="info-dot__radius"></div>
+            </button>
+            <div class="info-hint none">
+              <h2 class="info-hint__price">$50.00</h2>
+              <h3 class="info-hint__title">Dracaenas</h3>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="services">
+          <div class="services__container">
+            <div class="services__items">
+              <div class="services__item">
+                <img src="img/icons/gradient-icons/box.svg" alt="box" class="services__img">
+                <div class="services__details">
+                  <div class="services__title">
+                    <h3 class="title-3">Free Shapping</h3>
+                  </div>
+                  <div class="services__description">
+                    <p class="description-3">No charge for each delivery</p>
+                  </div>
+                </div>
+              </div>
+              <div class="services__item">
+                <img src="img/icons/gradient-icons/wallet.svg" alt="wallet" class="services__img">
+                <div class="services__details">
+                  <div class="services__title">
+                    <h3 class="title-3">Quick Payment</h3>
+                  </div>
+                  <div class="services__description">
+                    <p class="description-3">100% secure payment</p>
+                  </div>
+                </div>
+              </div>
+              <div class="services__item">
+                <img src="img/icons/gradient-icons/headphone.svg" alt="headphone" class="services__img">
+                <div class="services__details">
+                  <div class="services__title">
+                    <h3 class="title-3">24/7 Support</h3>
+                  </div>
+                  <div class="services__description">
+                    <p class="description-3">Quick support</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="best-seller">
+          <div class="best-seller__container">
+            <div class="best-seller__header">
+              <div class="best-seller__title">
+                <h2 class="title-2">Best Seller Product</h2>
+              </div>
+              <a href="#" class="best-seller__link">See all collection</a>
+            </div>
+            <div class="best-seller__slider">
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <article class="product-card swiper-slide">
+                    <a href="#product-page" class="product-card__link"></a>
+                    <div class="product-card__photo">
+                      <img src="img/products/camille-plant.png" srcset="img/products/camille-plant@2x.png 2x" 
+                      alt="camille" class="product-card__img">
+                    </div>
+                    <div class="product-card__info">
+                      <div class="product-card__description">
+                        <div class="product-card__title">Camille</div>
+                        <div class="product-card__rating">
+                          <img src="img/icons/star.svg" alt="star" class="product-card__star">
+                          <img src="img/icons/star.svg" alt="star" class="product-card__star">
+                          <img src="img/icons/star.svg" alt="star" class="product-card__star">
+                          <img src="img/icons/star.svg" alt="star" class="product-card__star">
+                          <img src="img/icons/star.svg" alt="star" class="product-card__star">
+                        </div>
+                        <div class="product-card__footer">
+                          <div class="product-card__price" data-currency="$">65.00</div>
+                          <button class="product-card__btn">
+                            <img src="img/icons/plus.svg" alt="Add to cart">
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="product-card swiper-slide">
+                    <a href="#product-page" class="product-card__link"></a>
+                    <div class="product-card__photo">
+                      <img src="img/products/peace-lily-plant.png" srcset="img/products/peace-lily-plant@2x.png 2x" 
+                      alt="camille" class="product-card__img">
+                    </div>
+                    <div class="product-card__info">
+                      <div class="product-card__description">
+                        <div class="product-card__title">Peace lily</div>
+                        <div class="product-card__rating">
+                          <img src="img/icons/star.svg" alt="star" class="product-card__star">
+                          <img src="img/icons/star.svg" alt="star" class="product-card__star">
+                          <img src="img/icons/star.svg" alt="star" class="product-card__star">
+                          <img src="img/icons/star.svg" alt="star" class="product-card__star">
+                          <img src="img/icons/star-off.svg" alt="star" class="product-card__star-off">
+                        </div>
+                        <div class="product-card__footer">
+                          <div class="product-card__price" data-currency="$">50.00</div>
+                          <button class="product-card__btn">
+                            <img src="img/icons/plus.svg" alt="Add to cart">
+                          </button>
+                        </div>
+                    </div>
+                  </article>
+                  <article class="product-card swiper-slide">
+                    <a href="#product-page" class="product-card__link"></a>
+                    <div class="product-card__photo">
+                      <img src="img/products/snake-plant.png" srcset="img/products/snake-plant@2x.png 2x" 
+                      alt="camille" class="product-card__img">
+                    </div>
+                    <div class="product-card__info">
+                      <div class="product-card__description">
+                        <div class="product-card__title">Snake</div>
+                        <div class="product-card__rating">
+                          <img src="img/icons/star.svg" alt="star" class="product-card__star">
+                          <img src="img/icons/star.svg" alt="star" class="product-card__star">
+                          <img src="img/icons/star.svg" alt="star" class="product-card__star">
+                          <img src="img/icons/star.svg" alt="star" class="product-card__star">
+                          <img src="img/icons/star.svg" alt="star" class="product-card__star">
+                        </div>
+                        <div class="product-card__footer">
+                          <div class="product-card__price" data-currency="$">75.00</div>
+                          <button class="product-card__btn">
+                            <img src="img/icons/plus.svg" alt="Add to cart">
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="product-card swiper-slide">
+                    <a href="#product-page" class="product-card__link"></a>
+                    <div class="product-card__photo">
+                      <img src="img/products/camille-plant.png" srcset="img/products/camille-plant@2x.png 2x" 
+                      alt="camille" class="product-card__img">
+                    </div>
+                    <div class="product-card__info">
+                      <div class="product-card__description">
+                        <div class="product-card__title">Camille</div>
+                        <div class="product-card__rating">
+                          <img src="img/icons/star.svg" alt="star" class="product-card__star">
+                          <img src="img/icons/star.svg" alt="star" class="product-card__star">
+                          <img src="img/icons/star.svg" alt="star" class="product-card__star">
+                          <img src="img/icons/star.svg" alt="star" class="product-card__star">
+                          <img src="img/icons/star.svg" alt="star" class="product-card__star">
+                        </div>
+                        <div class="product-card__footer">
+                          <div class="product-card__price" data-currency="$">65.00</div>
+                          <button class="product-card__btn">
+                            <img src="img/icons/plus.svg" alt="Add to cart">
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="product-card swiper-slide">
+                    <a href="#product-page" class="product-card__link"></a>
+                    <div class="product-card__photo">
+                      <img src="img/products/peace-lily-plant.png" srcset="img/products/peace-lily-plant@2x.png 2x" 
+                      alt="camille" class="product-card__img">
+                    </div>
+                    <div class="product-card__info">
+                      <div class="product-card__description">
+                        <div class="product-card__title">Peace lily</div>
+                        <div class="product-card__rating">
+                          <img src="img/icons/star.svg" alt="star" class="product-card__star">
+                          <img src="img/icons/star.svg" alt="star" class="product-card__star">
+                          <img src="img/icons/star.svg" alt="star" class="product-card__star">
+                          <img src="img/icons/star.svg" alt="star" class="product-card__star">
+                          <img src="img/icons/star-off.svg" alt="star" class="product-card__star-off">
+                        </div>
+                        <div class="product-card__footer">
+                          <div class="product-card__price" data-currency="$">50.00</div>
+                          <button class="product-card__btn">
+                            <img src="img/icons/plus.svg" alt="Add to cart">
+                          </button>
+                        </div>
+                    </div>
+                  </article>
+                </div>              
+                <!-- If we need scrollbar -->
+                <div class="swiper-pagination">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="reference">
+          <div class="reference__container">
+            <div class="reference__header">
+              <div class="reference__title">
+                <h2 class="title-2">Interior Plant Reference</h2>
+              </div>
+              <div class="reference__description">
+                <p class="description-2">make your home so comfortable with refreshing plants</p>
+              </div>
+            </div>
+            <div class="reference__grid">
+              <div class="plate plate--mid plate--01">
+                <a href="#plate-page" class="plate__link"></a>
+                <div class="plate__overlay">
+                  <span class="plate__label">living room</span>
+                </div>
+              </div>
+              <div class="plate plate--02">
+                <a href="#plate-page" class="plate__link"></a>
+                <div class="plate__overlay">
+                  <span class="plate__label">home office</span>
+                </div>
+              </div>
+              <div class="plate plate--tall plate--03">
+                <a href="#plate-page" class="plate__link"></a>
+                <div class="plate__overlay">
+                  <span class="plate__label">corner plants</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="care">
+          <div class="care__container">
+            <div class="care__content">
+              <div class="care__header">
+                <div class="care__title">
+                  <h2 class="title-2">How to care for plants</h2>
+                </div>
+                <div class="care__description">
+                  <p class="description-2">Take care of plants with all your heart</p>
+                </div>
+              </div>
+              <div class="care-list">
+                <div class="care-list__item">
+                  <img src="img/icons/gradient-icons/sun.svg" alt="sun" class="care-list__img">
+                  <div class="care-list__details">
+                    <div class="care-list__title">
+                      <h3 class="title-3">Adjust Lighting</h3>
+                    </div>
+                    <div class="care-list__description">
+                      <p class="description-3">When caring for indoor plants, make sure the room temperature is neither too cold nor too hot</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="care-list__item">
+                  <img src="img/icons/gradient-icons/water.svg" alt="water" class="care-list__img">
+                  <div class="care-list__details">
+                    <div class="care-list__title">
+                      <h3 class="title-3">Don't water too often</h3>
+                    </div>
+                    <div class="care-list__description">
+                      <p class="description-3">Watering ornamental plants indoors does not have to be done every day.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="care-list__item">
+                  <img src="img/icons/gradient-icons/plant.svg" alt="plant" class="care-list__img">
+                  <div class="care-list__details">
+                    <div class="care-list__title">
+                      <h3 class="title-3">Don't water too often</h3>
+                    </div>
+                    <div class="care-list__description">
+                      <p class="description-3">Watering ornamental plants indoors does not have to be done every day.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="care-list__item">
+                  <img src="img/icons/gradient-icons/temperature.svg" alt="temperature" class="care-list__img">
+                  <div class="care-list__details">
+                    <div class="care-list__title">
+                      <h3 class="title-3">Fertilize regularly</h3>
+                    </div>
+                    <div class="care-list__description">
+                      <p class="description-3">The nutrients most indoor houseplants need are nitrogen for balance and potassium for stem strength</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img src="img/care/care-img.jpg" srcset="img/care/care-img@2x.jpg 2x"
+            alt="plants on hand" class="care__img">
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container footer__container--small">
+          <div class="footer__grid">
+            <div class="footer__subscribe">
+              <div class="footer__title">
+                <h2>Newslatter</h2>
+              </div>
+              <form action="" class="footer__search search-form search-form--subscribe">
+                <input placeholder="Enter your email" type="text" 
+                class="search-form__input search-form__input--subscribe">
+                <button class="search-form__btn search-form__btn--subscribe">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+            <nav class="footer__nav footer__nav--support">
+              <div class="footer__nav-title">
+                <h3>Support</h3>
+              </div>
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a href="#">About Us</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#">Careers</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#">Blog</a>
+                </li>
+              </ul>
+            </nav>
+            <nav class="footer__nav">
+              <div class="footer__nav-title">
+                <h3>Useful Link</h3>
+              </div>
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a href="#">Payment & Tax</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#">Team of service</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#">Privaci Policy</a>
+                </li>
+              </ul>
+            </nav>
+            <nav class="footer__nav">
+              <div class="footer__nav-title">
+                <h3>Our Menu</h3>
+              </div>
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a href="#">Best Product</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#">Category</a>
+                </li>
+              </ul>
+            </nav>
+            <nav class="footer__nav">
+              <div class="footer__nav-title">
+                <h3>Address</h3>
+              </div>
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a href="#">JL. Setiabudhi No. 193 Sukasari, Bandung
+                    West Java, Indonesia</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#">hallo@daunku.com</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__copyright bt-line">
+            <p>© 2022 Daunku - All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+.plate {
+  position: relative;
+
+  background-color: $footer-gradient-start;
+  border-radius: 50px;
+
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  padding-bottom: 55%;
+  
+  &__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    border-radius: 50px;
+  }
+
+  &--01 {
+    background-image: url(./../img/reference/reference-01.jpg);
+    @include reting-bg(url(./../img/reference/reference-01@2x.jpg));
+
+  }
+
+  &--02 {
+    background-image: url(./../img/reference/reference-02.jpg);
+    @include reting-bg(url(./../img/reference/reference-02@2x.jpg));
+  }
+
+  &--03 {
+    background-image: url(./../img/reference/reference-03.jpg);
+    @include reting-bg(url(./../img/reference/reference-03@2x.jpg));
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // width: 100%;
+    // height: 0;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.2s ease-in;
+  }
+
+  &:hover &__overlay {
+    opacity: 1;
+    // height: 100%;
+  }
+  
+  &__label {
+    color: #fff;
+    font-size: clamp(32px, 1.545rem + 2.27vw, 64px);
+    font-weight: 600;
+    line-height: 117.1875%; /* 75/64 */
+    text-align: center;
+  }
+
+  &--mid {
+    padding-bottom: 75%;
+  }
+
+  &--tall {
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+
+    @include mobile() {
+      grid-row: auto;
+      grid-column: auto;
+    }
+  }
+
+  @include mobile() {
+    padding-bottom: 100%;
+  }
+}

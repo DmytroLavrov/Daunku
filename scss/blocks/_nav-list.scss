@@ -1,0 +1,27 @@
+.nav-list {
+  justify-self: center;
+
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 68px;
+  flex-wrap: wrap;
+
+  &__item {
+    transition: color 0.2s ease-in;
+
+    &:hover {
+      @include gradient-text($accent-gradient-start, $accent-gradient-end);
+      font-weight: 600;
+    }
+  }
+  &__link {}
+
+  @include tablet() {
+    display: none;
+  }
+}

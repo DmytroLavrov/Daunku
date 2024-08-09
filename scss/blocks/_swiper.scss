@@ -1,0 +1,12 @@
+.swiper {
+  // width: 100%;
+  max-width: 1051px;
+  height: 660px;
+}
+
+.swiper-pagination-bullet {
+  @include gradient-bg($accent-gradient-start, $accent-gradient-end);
+  // background-color: #4F4F4F;
+  border-radius: 0;
+  width: 30px;
+}

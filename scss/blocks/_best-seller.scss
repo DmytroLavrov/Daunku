@@ -1,0 +1,67 @@
+.best-seller {
+  padding-top: 142px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // gap: 48px;
+    flex-wrap: wrap;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    // padding-top: 120px;
+  }
+
+  &__title {
+    max-width: 355px;
+    // padding-bottom: 32px;
+  }
+
+  &__link {
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+
+    color: $text-color;
+    font-size: clamp(20px, 1.193rem + 0.28vw, 24px);
+    font-weight: 500;
+
+    transition: opacity 0.2s ease-in;
+
+    &::after {
+      content: url(./../img/icons/arrow-right-short.svg);
+      height: 48px;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__slider {}
+
+  @include desktop-medium() {
+    &__container {
+      justify-content: center;
+      gap: 48px;
+    }
+
+    &__header {
+      align-items: center;
+    }
+
+    &__title {
+      max-width: 100%;
+      text-align: center;
+    }
+
+    &__slider {
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+}

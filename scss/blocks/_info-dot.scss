@@ -1,0 +1,49 @@
+.info-dot {
+  position: relative;
+  cursor: pointer;
+
+  &:hover .info-dot__circle {
+    @include gradient-icons($accent-gradient-start, $accent-gradient-end);
+  }
+  &:hover .info-dot__radius {
+    animation: pulse 1s infinite alternate paused;
+  }
+  
+  &__circle {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    width: 10px;
+    height: 10px;
+    // width: 16px;
+    // height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+
+  &__radius {
+    width: 32px;
+    height: 32px;
+    // width: 54px;
+    // height: 54px;
+  
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(2px);
+  
+    animation: pulse 1s infinite alternate;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}

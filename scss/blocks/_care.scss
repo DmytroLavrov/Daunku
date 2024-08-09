@@ -1,0 +1,48 @@
+.care {
+  padding: 182px 0 209px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    @include tablet-xl() {
+      justify-content: center;
+    }
+  }
+
+  &__content {
+    display: grid;
+    gap: clamp(50px, 2.67rem + 2.27vw, 82px);
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+    @include tablet-xl() {
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    max-width: 470px;
+    // margin-bottom: 28px;
+  }
+
+  &__description {}
+
+  &__img {    
+    width: clamp(290px, 12.912rem + 26.07vw, 657px);
+    
+    border-radius: 50px;
+
+    @include tablet-xl() {
+      margin: 0 auto;
+    }
+  }
+}

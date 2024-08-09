@@ -1,0 +1,31 @@
+.cart {
+  justify-self: end;
+  
+  position: relative;
+  // z-index: 4;
+
+  &__img {}
+
+  &__count {
+    position: absolute;
+    top: 3px;
+    right: -6px;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 21px;
+    width: 21px;
+    // padding: 0 7px;
+
+    border-radius: 40px;
+    @include gradient-icons($accent-gradient-start, $accent-gradient-end);
+
+    // line-height: 21px;
+    
+    color: $cart-count;
+    font-size: 14px;
+    font-weight: 700;
+  }
+}

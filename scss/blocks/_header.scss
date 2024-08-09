@@ -1,0 +1,105 @@
+.header {
+  position: relative;
+  padding-top: clamp(17px, 0.494rem + 2.84vw, 57px);
+
+  @include gradient-bg($footer-gradient-start, $footer-gradient-end);
+
+  background-image: url(../img/header/header-bg.jpg);
+  background-size: cover;
+  aspect-ratio: 1728 / 1189;
+
+  @include reting-bg(url(./../img/header/header-bg@2x.jpg));
+
+  color: $header-text;
+
+  a {
+    color: $header-text;
+  }
+
+  &__container {}
+
+  &__nav {
+    margin-bottom: clamp(12px, -0.244rem + 4.97vw, 82px);
+
+    > .cart {
+      @include tablet() {
+        visibility: hidden;
+      }
+    }
+  }
+
+  &__content {
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0 auto clamp(10px, 0.426rem + 0.99vw, 24px);
+    max-width: 1128px;
+
+    font-size: clamp(22px, 0.523rem + 4.26vw, 82px);
+    font-weight: 700;
+    line-height: 117.073171%; /* 96/82 */
+
+    @include desktop-medium() {
+      text-wrap: balance;
+    }
+  }
+
+  &__description{
+    margin: 0 auto 42px;
+    max-width: 583px;
+
+    p {
+      opacity: 0.9;
+      
+      font-size: clamp(14px, 0.733rem + 0.71vw, 24px);
+      line-height: clamp(20px, 1.023rem + 1.14vw, 36px);
+      text-wrap: balance;
+    }
+
+    @include mobile-xl() {
+      margin: 0 auto;
+    }
+  }
+
+  &__search {
+    display: inline-block;
+    margin: 0 auto;
+
+    @include mobile-xl {
+      display: none;
+    }
+  }
+
+  &__dot {
+    position: absolute;
+
+    @include mobile-xl() {
+      display: none;
+    }
+  }
+
+  &__dot--sansevieria {
+    top: calc(685 * 100% / 1189);
+    left: calc(212 * 100% / 1728);
+
+    transform: translate(-8px, -8px);
+    // transform: translate(-40%, -40%);
+  }
+
+  &__dot--daffodils {
+    top: calc(477 * 100% / 1189);
+    left: calc(123 * 100% / 1728);
+
+    transform: translate(-8px, -8px);
+    // transform: translate(-40%, -40%);
+  }
+
+  &__dot--dracaena {
+    top: calc(688 * 100% / 1189);
+    left: calc(1571 * 100% / 1728);
+
+    transform: translate(-8px, -8px);
+    // transform: translate(-40%, -40%);
+  }
+}

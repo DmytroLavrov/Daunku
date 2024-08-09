@@ -1,0 +1,37 @@
+.services {
+  padding-top: 102px;
+
+  &__container {}
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    @include tablet() {
+      justify-content: center;
+    }
+
+    @include mobile() {
+      justify-content: flex-start;
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  &__img {}
+
+  &__details {}
+
+  &__title {
+    padding-bottom: 16px;
+  }
+
+  &__description {}
+}

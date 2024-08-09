@@ -1,0 +1,108 @@
+.info-hint {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translate(-48.5%, -100%);
+  
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px 0 0 20px;
+
+  background-image: url('./../../img/icons/hint.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 206px;
+  height: 116px;
+
+  &__price {
+    display: inline;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 118.75%; /* 38/32 */
+    text-align: left;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 118.75%; /* 19/16 */
+  }
+
+  @include desktop-medium() {
+    top: -12px;
+    padding: 17px 0 0 17px;
+    width: 177px;
+    height: 99px;
+
+    &__price {
+      font-size: 27px;
+    }
+
+    &__title {
+      font-size: 14px;
+    }
+  }
+
+  @include desktop-small {
+    top: -9px;
+    gap: 8px;
+    padding: 12px 0 0 17px;
+    width: 150px;
+    height: 80px;
+
+    &__price {
+      font-size: 23px;
+    }
+
+    &__title {
+      font-size: 12px;
+    }
+  }
+
+  @include tablet-xl {
+    width: 130px;
+    height: 70px;
+
+    &__price {
+      font-size: 20px;
+    }
+
+    &__title {
+      font-size: 10px;
+    }
+  }
+
+  @include tablet {
+    top: -8px;
+    gap: 6px;
+    padding: 10px 0 0 16px;
+    width: 120px;
+    height: 60px;
+
+    &__price {
+      font-size: 18px;
+    }
+
+    &__title {
+      font-size: 9px;
+    }
+  }
+
+  @include tablet-xs {
+    top: -7px;
+    gap: 4px;
+    padding: 6px 0 0 14px;
+    width: 100px;
+    height: 50px;
+
+    &__price {
+      font-size: 16px;
+    }
+
+    &__title {
+      font-size: 9px;
+    }
+  }
+}

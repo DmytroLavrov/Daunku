@@ -1,0 +1,106 @@
+// colors
+$text-color: #4F4F4F;
+$title-color: #081323;
+
+$accent-gradient-start: #2AF598;
+$accent-gradient-end: #009EFD;
+
+$header-text: #FFFFFF;
+// $header-gradient-start: #566270;
+// $header-gradient-end: #283444;
+
+$cart-count: #2D3949;
+
+$service-text: #828282;
+
+$card-bg: #C1D0E4;
+
+// $list-care-title: #000000;
+
+$footer-text: #FFFFFF;
+$footer-gradient-start: #566270;
+$footer-gradient-end: #283444;
+
+// fonts
+$font-main: "Work Sans", sans-serif;
+$font-logo: "Inter", sans-serif;
+
+// mixins for gradients
+@mixin gradient-text($gradient-start, $gradient-end) {
+  background-color: $gradient-start;
+  background-image: linear-gradient(to right, $gradient-start, $gradient-end 100%);
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin gradient-bg($gradient-start, $gradient-end) {
+  background: linear-gradient(74deg, $gradient-start, $gradient-end 100%);
+}
+
+@mixin gradient-icons($gradient-start, $gradient-end) {
+  background: linear-gradient(90deg, $gradient-start 10%, $gradient-end);
+}
+
+// mixin for retina
+@mixin reting-bg($image) {
+  @media 
+  (-webkit-min-device-pixel-ratio: 2), 
+  (min-resolution: 192dpi) { 
+    background-image: $image;
+  }
+}
+
+// mixins for media
+@mixin desktop-medium() {
+	@media (max-width: 1436px) {
+		@content;
+	}
+}
+
+@mixin desktop-small() {
+	@media (max-width: 1280px) {
+		@content;
+	}
+}
+
+@mixin tablet-xl() {
+  @media (max-width: 1080px) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin tablet-xs() {
+	@media (max-width: 904px) {
+		@content;
+	}
+}
+
+@mixin mobile-xl() {
+	@media (max-width: 819px) {
+		@content;
+	}
+}
+
+@mixin mobile() {
+	@media (max-width: 629px) {
+		@content;
+	}
+}
+
+@mixin mobile-m() {
+	@media (max-width: 375px) {
+		@content;
+	}
+}
+
+// container
+$container-max-width: 1520px;
+$container-padding: 15px;

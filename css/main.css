@@ -485,7 +485,7 @@ html, body {
   flex-direction: column;
   gap: 12px;
   padding: 20px 0 0 20px;
-  background-image: url("./../../img/icons/hint.svg");
+  background-image: url("./../img/icons/hint.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

@@ -1,3 +1,13 @@
 # Daunku
-Головна сторінка інтернет-магазину кімнатних рослин Daunku ❖ HTML, CSS, JS ❖ Препроцесор SCSS ❖ Адаптив до 320px <br />
-https://dmytrolavrov.github.io/Daunku/
+### Головна сторінка інтернет-магазину кімнатних рослин Daunku
+
+### Технології:
+- HTML
+- CSS
+- SCSS
+- JS
+
+### Додатково:
+- Адаптив до 320px
+
+[Дивитися демо](https://dmytrolavrov.github.io/Daunku/)
